@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="gpa.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+    <h1 id="top">Sir Muna GPA Calculator</h1>
+    <div class="calculator">
+        <div class="input-group">
+            <label for="courseName">Course Code:</label>
+            <input type="text" id="courseName" required>
+        </div>
+        <div class="input-group">
+            <label for="creditUnit">Credit Unit:</label>
+            <input type="number" id="creditUnit" min="1" required max="5" IF>
+        </div>
+        <div class="input-group">
+            <label for="grade">Grade:</label>
+            <select id="grade" required>
+                <option value="">Select Grade</option>
+                <option value="5">A (70-100)</option>
+                <option value="4">B (60-69)</option>
+                <option value="3">C (50-59)</option>
+                <option value="2">D (45-49)</option>
+                <option value="1">E (40-44)</option>
+                <option value="0">F (1-39)</option>
+            </select>
+    </div>
+    <div class="calc">
+        <button onclick="addCourse()">Add Course</button>
+        <div id="courses"></div>
+        <button onclick="calculateGPA()" id="calc-gpa">Calculate GPA</button>
+        <div id="result"></div>
+    </div>
+    <button onclick="window.print()">print</button>
+    <div class="help">
+        <h3>INSTRUCTIONS</h3>
+        <p>Enter the course code, credit unit and grade. Then click on the "Add
+            Course" button to add the course to the list. Click on the "Calculate
+            GPA" button after you have added all your courses to calculate the GPA.<br> If you still don't understand, your GP is below 2.5 <strong>"no offence"</strong></p>
+        <h3>NOTE!!!</h3>
+        <P>If your GP is <strong>Above</strong> 4.5, tell everybody your result even if they didn't ask you.<br> If your GP is <strong>Below</strong> 2.0, Maintain maximum composure, you've not checked your result yet.</P>
+    </div>
+    <div id="but">
+        <a href="Muna.html">VISIT SIR MUNA</a><br>
+        <a href="#top">Back To Top</a>
+    </div>
+    <h1><strong>Do You Know!</strong></h1>
+    <p><strong>4.50 - 5.00 = First Class<br>3.50 - 4.49 = 2nd Class Upper<br>2.40 - 3.49 = 2nd Class Lower<br>1.50 - 2.39 = 3rd Class<br>1.0 - 1.49 = Pass<br>0.00 - 0.99 = Fail</p>
+        <!-- <h1><strong>WHAT IS CGPA & GPA??</strong></h1> -->
+        <p><strong>CGPA - Cumulative Grade Point Average. (This is what you have after both 1st and 2nd semester .... In summation and Division, amounting to it)<br>GPA - Grade Point Average ( This is what you have after every semester)<br>C.U - Credit Units<br>TCU - Total Credit Unit<br>G.P - Grade Point<br>TGP or TQP - Total Grade Point or Quality Point</strong>
+            <br><a href="#top">Back To Top</a>
+
+    <script src="gpa.js"></script>
+    <footer class="footer">
+        <marquee behavior="smooth" direction="ease-in-out"><h3>Copyright &copy; 2024 Sir Muna Alias The CYBER LORD</h3></marquee>
+    </footer>
+</body>
+</html>
